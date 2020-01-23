@@ -13,10 +13,10 @@ function rotate(str, numOfRotation){
 
 //Check if the given number is prime
 function checkIfPrime(inputNumber = 0){
-    if(inputNumber < 2 || inputNumber % 2 == 0)
-        return false;
     if(inputNumber == 2)
         return true;
+    if(inputNumber < 2 || inputNumber % 2 == 0)
+        return false;
     else{
         let counter = Math.floor(Math.sqrt(inputNumber));
         while(counter > 2){
