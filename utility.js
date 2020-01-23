@@ -27,3 +27,11 @@ function checkIfPrime(inputNumber = 0){
         return true;
     }
 }
+
+//Check if the given input is a palindrome or not
+
+function checkPalindrome(inputVal){
+    if(!inputVal)
+        return false;
+    return String(inputVal).split("").reverse().join("") === inputVal;
+}
